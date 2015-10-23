@@ -1,0 +1,28 @@
+{
+  "name": "amuletum",
+  "version": "1.0.0",
+  "description": "Amuletum è un *remake* di un famoso GdR da tavolo, creato con lo scopo educativo di avvicinare i ragazzi alla programmazione in JavaScript.",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemme/amuletum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hemme/amuletum/issues"
+  },
+  "homepage": "https://github.com/hemme/amuletum#readme"
+}

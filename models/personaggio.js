@@ -19,6 +19,11 @@ class Personaggio {
 	toString() {
 		return `${this.nome} (fo:${this.forza}, as:${this.astuzia}, vi:${this.vita}, fa:${this.fato})`;
 	}
+
+	static toString(card)
+	{
+		return
+	}
 }
 
 var data = [

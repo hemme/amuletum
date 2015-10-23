@@ -1,5 +1,7 @@
 'use strict';
 
+require('coffee-script/register');
+
 var Personaggio = require('./models/Personaggio');
 var Util = require('./lib/Util');
 
@@ -20,7 +22,17 @@ let schedePersonaggi = [
     Personaggio.Crea('guerriero')
 ];
 
-for (var i = 0; i < schedePersonaggi.length; i++) {
-    var p = schedePersonaggi[i];
-    console.log( (i+1) + ') '+ p);
+var dati_nemici = require('./data/nemici');
+var Nemico = require('./models/Nemico');
+var carteNemici = Nemico.carica(dati_nemici);
+
+elenca('Personaggi', schedePersonaggi);
+elenca('Nemici', carteNemici);
+
+function elenca(titolo, carte) {
+	console.log('\r'+ titolo);
+	for (var i = 0; i < carte.length; i++) {
+	    var p =carte[i];
+	    console.log( (i+1) + ') '+ p);
+	}
 }
