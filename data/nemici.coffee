@@ -29,6 +29,12 @@ nemici = [
 			},{
 				nome: 'orco'
 				forza:5
+			},{
+				nome: 'goblin'
+				forza:2
+			},{
+				nome: 'hobgoblin'
+				forza:3
 			}
 		]
 	},{
@@ -43,6 +49,9 @@ nemici = [
 			},{
 				nome: 'lemure'
 				astuzia:1
+			},{
+				nome: 'demone'
+				astuzia:10
 			}
 		]
 	},{

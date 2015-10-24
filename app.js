@@ -26,8 +26,13 @@ var dati_nemici = require('./data/nemici');
 var Nemico = require('./models/Nemico');
 var carteNemici = Nemico.carica(dati_nemici);
 
+var dati_oggetti = require('./data/oggetti');
+var Oggetto = require('./models/Oggetto');
+var carteOggetti = Oggetto.carica(dati_oggetti);
+
 elenca('Personaggi', schedePersonaggi);
 elenca('Nemici', carteNemici);
+elenca('Oggetti', carteOggetti);
 
 function elenca(titolo, carte) {
 	console.log('\r'+ titolo);

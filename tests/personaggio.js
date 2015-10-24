@@ -1,19 +1,19 @@
 var assert = require('assert');
 
-var Personaggio = require('personaggio');
+var Personaggio = require('../models/personaggio');
 
 var base = new Personaggio();
 
 console.log(Personaggio);
 
-var n = Personaggio.CreaNano('Nano');
+var n = Personaggio.Crea('nano');
 console.log(n);
 
-var a = Personaggio.CreaAssassino('Assassino');
+var a = Personaggio.Crea('assassino');
 console.log(a);
 
-var t = Personaggio.CreaTroll('Troll');
+var t = Personaggio.Crea('troll');
 console.log(t);
 
-var m = Personaggio.CreaMago('Mago');
+var m = Personaggio.Crea('mago');
 console.log(m);
